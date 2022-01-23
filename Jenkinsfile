@@ -28,6 +28,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'server-credentials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
                     //sh 'echo $PASSWORD'
                     echo USERNAME
+                    echo "THIS IS THE PASSWORD EVERYBODY -----------------> $PASSWORD"
                     echo "username is $USERNAME"
                 }
             }

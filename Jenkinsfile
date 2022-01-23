@@ -11,6 +11,7 @@ pipeline {
             steps {
                 echo 'building the application'
                 echo "building version ${NEW_VERSION}"
+                'mvn --version'
             }
         }
 
